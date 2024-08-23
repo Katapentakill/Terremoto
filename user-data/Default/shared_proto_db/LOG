@@ -1,0 +1,9 @@
+2024/08/23-02:48:03.835 12c0 Reusing MANIFEST D:\Ale\WebScrapping\Practica\user-data\Default\shared_proto_db/MANIFEST-000001
+2024/08/23-02:48:03.836 12c0 Recovering log #4
+2024/08/23-02:48:03.837 12c0 Reusing old log D:\Ale\WebScrapping\Practica\user-data\Default\shared_proto_db/000004.log 
+2024/08/23-03:11:54.786 12c0 Level-0 table #8: started
+2024/08/23-03:11:54.862 12c0 Level-0 table #8: 111439 bytes OK
+2024/08/23-03:11:54.883 12c0 Delete type=0 #4
+2024/08/23-04:13:34.262 12c0 Level-0 table #10: started
+2024/08/23-04:13:34.323 12c0 Level-0 table #10: 112149 bytes OK
+2024/08/23-04:13:34.355 12c0 Delete type=0 #7

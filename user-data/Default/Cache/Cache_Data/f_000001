@@ -1,0 +1,291 @@
+/*
+Theme Name: Plantilla básica CSN
+Version: 1.1
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align: baseline;}
+html {overflow-x:hidden; -webkit-font-smoothing: antialiased;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none; font-family:georgia; font-size:18px; font-style: italic;}
+blockquote:before, q:before, q:after {content: ''; content: none;}
+sup, sub {height:0; line-height:1; vertical-align:baseline; _vertical-align:bottom; position:relative; font-size:10px;}
+sup {bottom:1ex;}
+sub {top:.5ex;}
+table {border-collapse:collapse; border-spacing:0;}
+button, input, select, textarea {margin:0;}
+:focus {outline:0;}
+img, video, object {max-width:100%; height:auto!important;}
+iframe {max-width:100%;}
+blockquote {font-style:italic; font-weight:normal; font-size:18px; padding:20px 10px 10px 0; position:relative; font-family:georgia; border-bottom:1px solid #DFDFDF; border-top: 1px solid #DFDFDF; margin-bottom: 20px;}
+blockquote p {margin-bottom:10px;}
+strong, b {font-weight:bold;}
+em, i, cite {font-style:italic;}
+small {font-size:100%;}
+figure {margin:10px 0;}
+code, pre {font-weight:normal; font-style:normal;}
+pre {line-height:1.3; overflow:auto; background:#f7f7f7 url('images/code.png') 10px 2px no-repeat; padding:2em 1em 1em 1em; border:1px solid #DDD; margin:15px 0;}
+code {padding:0 8px; line-height:1.5;}
+mark {padding:1px 6px; margin:0 2px; color:black; background:#ffe974;}
+address {margin:10px 0; font-style: italic;}
+.wp-caption {max-width:100%; background:#EEE; padding:8px; width:auto!important;}
+.sticky { }
+.gallery-caption { }
+.gallery dt {width:auto; text-align:center; float:none;}
+.gallery img {border:0!important;}
+.bypostauthor { }
+.wp-caption-text {margin-bottom:0; text-align:center;}
+dl { }
+dt {float:left; clear:left; width:100px; text-align:right; font-weight:bold;}
+dd {margin:0 0 0 110px; padding:0 0 0.5em 0; overflow:hidden;}
+
+/*Framework*/
+
+body {font:13px/23px Open Sans, sans-serif, Verdana; color:#555; background:#ddd url('images/bg-body.jpg') top repeat-x!important; -moz-osx-font-smoothing:grayscale; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%;}
+::-moz-selection {background:#38b7ee; color:white; text-shadow:none;}
+::selection {background:#38b7ee; color:white; text-shadow:none;}
+#page, .container {position:relative; margin-right:auto; margin-left:auto; overflow:hidden;}
+h1, h2, h3, h4, h5, h6 {margin-bottom:12px; color:#666; font-weight:bold; text-transform:uppercase;}
+h1 {font-size:14px; line-height:1.4; margin:0 0 15px; color:#666; font-weight:normal; padding:12px 0; border-bottom:4px solid #ddd;} /* h1 usado como bloque de título */
+h2 {font-size:18px; line-height:1.4;}
+h3 {font-size:16px; line-height:1.4; color:#999;}
+h4, h5, h6 {font-size:13px; line-height:1.4; font-weight: bold;}
+/* h2 a h6 usados como títulos de texto */
+p { margin-bottom:15px; text-align:left;}
+a {text-decoration:none; color:#0954e7; -webkit-transition:background-color, color 0.2s linear; -moz-transition:background-color, color 0.2s linear; transition:background-color, color 0.2s linear;}
+a:link, a:visited, a:active {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:visited {color:#551a8b;}
+
+/* Fontello
+   ========================================================================== */
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?76219199'),
+       url('../font/fontello.woff2?76219199') format('woff2'),
+       url('../font/fontello.woff?76219199') format('woff'),
+       url('../font/fontello.svg?76219199#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-lock-2:before { content: '\e801'; } /* '' */
+.icon-download-alt:before { content: '\e802'; } /* '' */
+.icon-left-big:before { content: '\e803'; } /* '' */
+.icon-location:before { content: '\e804'; } /* '' */
+.icon-minus:before { content: '\e805'; } /* '' */
+.icon-down-open:before { content: '\e806'; } /* '' */
+.icon-left-open:before { content: '\e807'; } /* '' */
+.icon-right-open:before { content: '\e808'; } /* '' */
+.icon-up-open:before { content: '\e809'; } /* '' */
+.icon-plus:before { content: '\e80a'; } /* '' */
+.icon-info-circled:before { content: '\e80b'; } /* '' */
+.icon-ok:before { content: '\e80c'; } /* '' */
+.icon-cancel:before { content: '\e80d'; } /* '' */
+.icon-binary:before { content: '\e80e'; } /* '' */
+.icon-info-circled-alt:before { content: '\f086'; } /* '' */
+.icon-laptop:before { content: '\f109'; } /* '' */
+.icon-info:before { content: '\f129'; } /* '' */
+.icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-file-pdf:before { content: '\f1c1'; } /* '' */
+
+/* Generales
+   ========================================================================== */
+
+body {color:#555; background:#ddd url('../img/bg-body.jpg') top repeat-x!important; -webkit-text-size-adjust:100%; image-rendering:auto; image-rendering: -webkit-optimize-contrast;}
+.main-container {width:980px; margin:0 auto;}
+p, a, i, input, select, textarea {font-family: Open Sans, sans-serif, Verdana;}
+a {text-decoration:none; color:#0954e7; -webkit-transition:background-color, color 0.2s linear; -moz-transition:background-color, color 0.2s linear; transition:background-color, color 0.2s linear;}
+hr {margin:20px 0; height:1px; border:0; border-top:1px solid #ddd;}
+input, textarea {font-size:13px; font-family:Open Sans, sans-serif, Verdana; color:#3d3d3d; border-width:thin; border:1px solid #ccc; margin-top:3px;}
+input[type="text"], input[type="email"], textarea {padding: 4px 1%; margin-top:3px; width:98%;}
+input:hover, textarea:hover {border-color:#999;}
+input:focus, textarea:focus {border-color:#0e83d1; box-shadow:0 0 5px #76d1ff;}
+input[type="submit"], input[type="button"] {color:#fff; border:0px; cursor:pointer; background:#0954e7 url('images/bg-boton.png'); font-size: 14px; line-height:20px; padding:6px 0 28px 0; height:30px; border-bottom:1px solid #2b6f8d; border-top:1px solid #466cb6; position:relative; border-radius:3px; width:100%;}
+/*input[type="submit"]:hover, input[type="button"]:hover {border-bottom:1px solid #2b6f8d; border-top:1px solid #4abef2; background:#44b0e0;}*/
+/*input[type="submit"]:active, input[type="button"]:active, input[type="submit"]:focus, input[type="button"]:focus {border-bottom:1px solid #4abef2; border-top:1px solid #2b6f8d; box-shadow:none;}*/
+select {min-width: 72px; font-size:14px; color:#444; border-color:#b9b9b9; background:#fff;}
+aside select {width:98%; margin:6px 1%;}
+article {float:right; width:68%; padding:0 2% 20px 0; margin:0;}
+section:first-child > article p {margin-top:15px;}
+aside {float:left; width:26%; padding:0 2% 20px; margin:0;}
+aside p, aside li {font-size:12px!important; line-height:19px!important; color:#666;}
+aside .boton {font-size:18px!important;}
+aside input {font-size:12px; width:86%; padding:4px 7%;}
+main.full article {width:96%;}
+main.full aside {display:none;}
+table {width:100%!important; line-height:21px;}
+table th {font-weight: bold;}
+table th, table td {text-align: center;}
+article ul {list-style:disc; list-style-position:inside;}
+article ol {list-style:decimal; list-style-position:inside;}
+
+
+/* Header
+========================================================================== */
+
+header, .sup, .mid, .nav {width:100%;}
+header {position:relative; margin:0 auto; width:100%; z-index:99; max-width:1170px; float:none; display:block; min-height:82px;}
+.sup {width: 100%; height:25px; background:#343233;}
+.sup :before {margin-right:4px!important;}
+.sup ul {list-style: none;}
+.sup ul li {display:inline; font-size:9.5px; border-left:1px solid #999; line-height:11px;}
+.sup ul li a {color: #eee; margin: 0 5px;}
+.sup ul li:first-child {border-left:0;}
+.sup ul li:first-child a {margin-left:0}
+.sup ul li:last-child {float: right; margin-top:7px; border-left:0}
+.inf {position:relative; width:100%; float:left; padding:0; background:#434142 url('../img/bg-header.png') top center no-repeat;}
+.inf #logo-csn {font-size:42px; float:left; display:inline-block; line-height:1; margin:2px 0 4px; text-transform:uppercase;}
+.inf #logo-csn a {float:left; color:#2a2a2a; font-weight:bold;}
+.inf #logo-csn a img {float:left; width:262px; height:147px; padding-top:20px;}
+.inf #logo-fcfm img {height:70px!important; margin:20px 22px 0;}
+.inf #switch {height: 78px; float: right; padding: 20px 0; text-align:center;}
+.inf #switch p {font-style:italic; color:#ccc; font-weight:normal; float:left;}
+.inf #switch a {display:block; width:auto; padding:14px 0 24px; height:10px; margin-top:16px; text-transform: uppercase; font-family:Open Sans, sans-serif, Verdana; font-size: 14px; line-height: 20px; float:right; color:#fff; width:200px; box-shadow:0 0 5px #333; border-radius:4px; background:#0954e7; border-top:1px solid #466cb6; border-bottom:1px solid #2b6f8d;}
+/*.inf #switch a:hover {border-bottom: 1px solid #2b6f8d; border-top: 1px solid #4abef2; background: #44b0e0; text-decoration: none;}*/
+/*.inf #switch a:active {border-bottom: 1px solid #4abef2; border-top: 1px solid #2b6f8d; box-shadow: none;}*/
+
+/* Menú principal */
+
+.inf #nav {display:block; margin:0 auto; max-width:100%; float:right; background:url('../img/bg-menu.png') top right repeat-y; background-size:100%; clear:right; }
+.inf #nav nav {margin:0 auto; font-size:13px; width:100%; float:left;}
+.inf #nav nav ul {float:left; margin:0 auto;}
+.inf #nav nav ul li {float:left; position:relative; margin-left:0;}
+.inf #nav nav ul li a {font-size:12px; color:#ccc; text-align:left; text-decoration:none; line-height:1.4; padding:7px 72px 6px; /* < Cambiar valor central del padding para modificar el ancho de los botones del menú  */ min-height:20px; font-weight:normal; text-transform:uppercase; display:block;}
+.inf #nav nav ul li a:hover {color:#0954e7;}
+.inf #nav nav ul li a.current {background:#0954e7; border-top-left-radius:4px; border-top-right-radius:4px; color:#fff!important;}
+.inf:after {content:""; position:absolute; width:100%; background:#0954e7; bottom:0; left:0; height:5px;}
+
+/* Contenido
+========================================================================== */
+
+main#page {width:100%; max-width:980px; background:#fff; min-height:600px; font-size:13px; line-height: 23px;}
+main p {font-size:13px; line-height: 22px;}
+main section h1 {background:#006381 url('images/bg-title-page-single.jpg') repeat-y left; border:0; margin:0; padding:11px 2%; font-size:18px; color:#fff; line-height:1.2;}
+main section h1 span.boton a {color:#fff; border-radius:5px; font-size:16px;}
+main section h1 span.boton a:hover {text-decoration:none; background:#015975;}
+main section {margin-bottom:15px;}
+main section + aside h1:first-child, main section + aside + article h1:first-child, main section + article h1:first-child {margin-top:-15px;}
+:before {margin-right:12px!important}
+h1 span.dato {text-transform: none; font-style:italic; color:#999;}
+h1 span.boton {float:right; font-size:15px!important;}
+h1 span.boton a {display:block; color:#328fcd;}
+h1 span.boton a:before {margin:0 2px!important;}
+h1 span.boton a:hover {text-decoration:none; background:#f1f1f1;}
+h1.ondas:before {content: ""; background:url(../img/ondas.gif); background-size:100%; display:inline-block; width:15px; height:15px;}
+article h1 + table, aside h1 + .bloque, aside h1 + img {margin-top:-15px;}
+article p:last-child, aside p:last-child {margin-bottom:0;}
+article img {display:block; margin:0 auto;}
+.info {margin-top:25px; padding:15px 2%; border-radius:6px; border:2px dashed #ccc;}
+
+/* Bloque Formato ASCII / Binary / Download  */
+
+ul.dataformat {list-style: none; padding:10px 2%; margin-top:10px; background:#666; border-radius:3px; color:#eee; border-bottom:2px solid #444; border-bottom-left-radius:0; border-bottom-right-radius:0;}
+ul.dataformat li {display:inline-block; text-align:center;}
+ul.dataformat li input[type="submit"] {cursor:pointer; line-height:20px; padding:0; position:relative; background:0; width:auto; border:0; color:#38b7ee;}
+ul.dataformat li input {margin-right:10px;}
+ul.dataformat li:last-child {border-left:1px solid #eee;}
+
+/* Django tablas */
+
+article table th a {color:#555;}
+article table th, article table td {padding:5px 0; vertical-align: middle;}
+article table tr:last-child {border-bottom:1px solid #ddd;}
+article tr:nth-child(odd) {background:#f6f6f6; border-bottom:1px solid #ddd;}
+th.select_events {width:5%;}
+ul.pagination {list-style: none; padding:10px 0; border-bottom:4px solid #ddd; min-height:20px;}
+ul.pagination li {display:inline-block;}
+ul.pagination li.previous {margin-right:10px;}
+ul.pagination li.next {margin-left:10px;}
+ul.pagination li:last-child {float:right;}
+
+/* Sismología tablas */
+
+table.sismologia td {padding:15px 0;}
+table.sismologia td a, table.sismologia  th a {text-decoration:none;}
+table.sismologia td a:hover, table.sismologia  th a:hover, table.sismologia tr:hover a {text-decoration:underline;}
+table.sismologia td:first-child, table.sismologia th:first-child {text-align:left; padding-left:15px; width:67%;}
+table.sismologia td:last-child, table.sismologia  th:last-child {padding-right:1%;}
+table.sismologia td.magnitud {font-size:21px;}
+table.sismologia td.s_sensible {font-weight:bold;}
+table.sismologia.detalle td:first-child, table.sismologia.detalle th:first-child {width:36%;}
+table.sismologia.informe {margin-bottom:20px;}
+table.sismologia.informe td, table.sismologia.informe th {padding:5px 0; text-align:left;}
+table.sismologia.informe td:first-child, table.sismologia.informe th:first-child {width:40%; padding-left:15px; font-weight:bold;}
+
+/* Barra lateral  */
+
+aside .bloque {width:88%; padding:10px 6% 15px; background:#eee; border-bottom-left-radius:4px; border-bottom-right-radius:4px;}
+aside h1 {text-align:left;}
+aside img {display:block; margin:0 auto;}
+aside .info {padding:15px 6%;}
+
+/* Footer
+========================================================================== */
+
+footer {overflow:hidden; float:left; width:100%; display:block; clear:both; font-size:14px; line-height:1.8; background:#ddd; color:#555;}
+#page {min-height: 60px; clear:both; width:100%; padding:0; max-width:980px; overflow:hidden;}
+footer #page {background:url(../img/bg-footer.png) right no-repeat;}
+.widget {float:left; list-style:none;}
+footer aside {margin:20px 3% 15px; width:28%; font-size:12px; padding: 2px 0 0 0;}
+footer aside img {margin:0;}
+footer aside:first-child {width:96%; background:#bbb; margin:0; padding:10px 2%;}
+footer aside:first-child .textwidget {margin:0; text-align:center; color:#fff;}
+footer aside:first-child .textwidget a {margin:0 1%; color:#fff!important;}
+footer aside:first-child + aside {width: 32%; margin-left: 0;}
+footer aside:last-child {margin-right:0; text-align:right;}
+footer aside:last-child a {float:right; margin:2px 0 5px;}
+footer.copyrights {float: left; width: 95.7%; clear: both; background:#434142; padding: 20px 2.2% 10px 2.2%; color: #9b9b9b; font-size: 12px; position: relative; border-top: 1px solid #e2e2e2;}
+footer.copyrights #page {background:none;}
+footer.copyrights a {color: #fff;}
+footer.copyrights p, .copyrights a {margin:0!important; line-height:14px; font-size:11px;}
+footer.copyrights ul li {display: inline-block;}
+footer.copyrights ul li:first-child {width:49%; float:left;}
+footer.copyrights ul li:last-child {width:50%; text-align:right; float:right;}
+footer.copyrights ul li:last-child p {text-align: right!important;}
+footer.copyrights ul li img {width: 25px;}
+footer.copyrights ul li img:hover {opacity: 0.8;}
+
+/* Responsive
+========================================================================== */
+
+.responsive .main-container {max-width:100%; min-width:320px; border-bottom:4px solid #ccc;}
+.responsive main section h1 {padding:11px 4%;}
+.responsive main.full article {width:92%; padding:0 4% 20px 6%;}
+.responsive article h1 span.dato {font-size:12px;}
+.responsive .sup {text-align:center;}
+.responsive .sup ul li:last-child {float:none; margin:0; border-left:1px solid #999;}
+.responsive .inf {width:96%; padding:0 2%; text-align:center;}
+.responsive .inf #logo-csn {float:none;}
+.responsive table.sismologia td:first-child, .responsive table.sismologia th:first-child {width:80%;}
+.responsive header, .responsive main {width:100%;}
+.responsive table.sismologia.informe td:first-child,
+.responsive table.sismologia.informe th:first-child {width:auto; padding-left:15px; font-weight:bold;}
+.responsive footer.copyrights ul li {width:100%; text-align:center; float:none;}
+.responsive footer.copyrights ul li p {text-align:center!important; line-height:18px;}
+.responsive footer.copyrights ul li:first-child + li {background:#333; padding:6px 0; margin:6px 0; border-radius:5px;}
+.responsive footer .widget {background:none;}
+.responsive footer .widget a img {width:270px;}
+
+/* Extras */
+.cover {display:none;}
